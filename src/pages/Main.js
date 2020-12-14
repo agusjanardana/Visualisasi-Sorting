@@ -2,12 +2,11 @@ import React from 'react'
 import styled from 'styled-components';
 
 
-function Main({ currentIndex, data, nextIndex }) {
+function Main({ currentIndex, data, nextIndex, waktu }) {
     console.log("App -> Size ", data);
     const LebarArray = window.screen.width / data.length;
     return (
         <Container>
-
             <BlockContainer>
                 {data.map((size, i) => (
                     <Bar height={`${size}px`}
@@ -15,13 +14,13 @@ function Main({ currentIndex, data, nextIndex }) {
                         key={i}
                         active={currentIndex === i}
                         style={nextIndex === i ? { backgroundColor: "green" } : null}
-
                     />
                 ))}
             </BlockContainer>
+            <Footer ><p>{`${waktu} ms`}</p></Footer>
 
-            <Footer />
         </Container>
+
     );
 }
 
@@ -50,6 +49,9 @@ const Footer = styled.div`
     width : 100%;
     height : 50px;
     border : 1px solid red;
+    font-weight: bold;
+
+    text-align: center;
 `
 
 const Bar = styled.div`
