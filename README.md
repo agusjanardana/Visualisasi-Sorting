@@ -1,6 +1,7 @@
 #
-Currectly support for Bubble Sort Visualisation.
-Next Update : Insertion Sort.
+Support Insertion sort and Bubble sort
+https://visualisasisorting.herokuapp.com/
+you can add edit this and add any sort method based on insertion/bubble code logic.
 
 # Getting Started with Create React App
 
