@@ -2,6 +2,9 @@
   "name": "visualisasi-sorting",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "12.18.2"
+  },
   "dependencies": {
     "@material-ui/core": "^4.11.1",
     "@testing-library/jest-dom": "^5.11.4",
